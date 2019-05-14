@@ -7,3 +7,6 @@
 1. 文本建模
 2. 特征建模
 3. 主题建模
+
+### 原始数据github地址：
+https://github.com/thunlp/Chinese_Rumor_Dataset.git
