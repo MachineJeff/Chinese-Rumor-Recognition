@@ -38,4 +38,12 @@ for i in range(len(data)):
 
 print(corpus[:3])
 print(stop[:3])
+print(time()-t)
 
+
+save_jieba = "datap/jieba.txt"
+
+with open(save_jieba,"w") as fp:
+	for x in corpus:
+		fp.write(x)
+		fp.write("\n")
