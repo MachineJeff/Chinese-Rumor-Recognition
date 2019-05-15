@@ -53,3 +53,16 @@ test_score = model.score(x_test,y_test)
 
 print('train_score:{}'.format(train_score))
 print('test_score:{}'.format(test_score))
+
+
+
+
+poo = model.predict_proba(x_train)
+
+print(poo)
+
+ok = "datap/logPro.txt"
+with open(ok,"w") as fp:
+	for x in poo:
+		fp.write(str(x[0]))
+		fp.write("\n")

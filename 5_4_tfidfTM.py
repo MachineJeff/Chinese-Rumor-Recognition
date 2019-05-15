@@ -56,3 +56,13 @@ print(classification_report(y_test,pre))
 cm = confusion_matrix(y_test,pre)
 print(cm)
 
+
+poo = clf.predict_proba(x_train)
+
+print(poo)
+
+ok = "datap/tfidfPro.txt"
+with open(ok,"w") as fp:
+	for x in poo:
+		fp.write(str(x[0]))
+		fp.write("\n")
