@@ -57,7 +57,7 @@ cm = confusion_matrix(y_test,pre)
 print(cm)
 
 
-poo = clf.predict_proba(x_train)
+poo = clf.predict_proba(tfidf)
 
 print(poo)
 

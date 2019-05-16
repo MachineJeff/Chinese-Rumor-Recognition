@@ -57,7 +57,7 @@ print('test_score:{}'.format(test_score))
 
 
 
-poo = model.predict_proba(x_train)
+poo = model.predict_proba(array)
 
 print(poo)
 
